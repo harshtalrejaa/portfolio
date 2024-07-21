@@ -1,0 +1,54 @@
+/* Excalidraw-specific styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Marker Felt', fantasy;
+}
+
+.excalidraw-header {
+    background-color: #ffca28;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.excalidraw-heading {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.excalidraw-subheading {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.excalidraw-section {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.portfolio-item {
+    background-color: #ffca28;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.skills-list li {
+    background-color: #ffca28;
+    color: #333;
+}
+
+.btn-submit {
+    background-color: #ffca28;
+    color: #333;
+}
+
+.excalidraw-footer {
+    background-color: #ffca28;
+    color: #333;
+}

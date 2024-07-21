@@ -1,0 +1,150 @@
+/* Define the Virgil font */
+@font-face {
+    font-family: 'Virgil';
+    src: url('fonts/Virgil.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Virgil', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #f0f0f0;
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 10000px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#intro {
+    text-align: left;
+    padding: 5em 2em;
+}
+
+#intro h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+#intro h3 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+#intro p {
+    font-size: 1.2em;
+    max-width: 600px;
+    text-align: left;
+}
+
+#intro .btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    border: 3px solid #000000;
+}
+
+section {
+    padding: 2em;
+    margin: 2em 0;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.project-card {
+    border: 1px solid #000000;
+    padding: 1em;
+    width: calc(33.333% - 2em);
+    background-color: #f8f8f8;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.skills-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.timeline {
+    border-left: 2px solid #000000;
+    padding-left: 1em;
+}
+
+.timeline-event {
+    margin: 1em 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form label {
+    margin-bottom: 0.5em;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    width: 100%;
+    max-width: 400px;
+    background-color: #f0f0f0;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+form button {
+    padding: 0.5em 1em;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f0f0f0;
+    color: #000000;
+    text-align: center;
+    padding: 1em;
+}
+
+footer p {
+    margin: 0;
+}
