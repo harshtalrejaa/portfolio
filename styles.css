@@ -19,7 +19,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
+}
+.name {
+    opacity: 1;
+    align-content: center;
 }
 
 .logo img {
@@ -36,7 +40,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #000000;
+    color: #272727;
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -58,7 +62,7 @@ nav ul li a {
 
 #intro p {
     font-size: 1.2em;
-    max-width: 600px;
+    max-width: 700px;
     text-align: left;
 }
 
@@ -87,8 +91,13 @@ section {
 .project-card {
     border: 1px solid #000000;
     padding: 1em;
-    width: calc(33.333% - 2em);
+    width: 30%;
+    height: 350px;
     background-color: #f8f8f8;
+    border-radius: 0.75em;
+}
+.h4 {
+    opacity: 0.5;
 }
 
 .skills-container {
@@ -100,11 +109,14 @@ section {
 .skills-container img {
     width: 50px;
     height: 50px;
+    padding: 1.5em;
+    align-items: center;
 }
 
 .timeline {
     border-left: 2px solid #000000;
     padding-left: 1em;
+    align: center;
 }
 
 .timeline-event {
@@ -131,11 +143,15 @@ form input, form textarea {
 }
 
 form button {
-    padding: 0.5em 1em;
-    background-color: #4caf50;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
+    font-family: 'Virgil';
+    background-color: white;
+    width: 200px;
+    height: 35px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    border: 3px solid #000000;
 }
 
 footer {
