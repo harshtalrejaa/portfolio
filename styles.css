@@ -28,7 +28,7 @@ header {
 
 .logo img {
     width: 50px;
-    border-radius: 10000px;
+    border-radius: 50px;
 }
 
 nav ul {
@@ -82,35 +82,60 @@ section {
     margin: 2em 0;
 }
 
+section h2 {
+    text-align: center;
+}
+
 .projects-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
+    padding: 1em;
+    align-items: center; /* Center items vertically */
+    justify-content: space-evenly; /* Center items horizontally */
+    height: 100%; /* Ensure container takes full height of parent */
 }
 
 .project-card {
     border: 1px solid #000000;
     padding: 1em;
-    width: 30%;
-    height: 350px;
+    width: 20%;
+    max-width: 300px; /* Limit maximum width for responsiveness */
+    height: 100%;
+    min-height: ;
     background-color: #f8f8f8;
     border-radius: 0.75em;
-}
-.h4 {
-    opacity: 0.5;
+    margin: 20px; /* Adjusted margin for better spacing */
+    box-sizing: border-box ;
+
 }
 
+.project-card p {
+    text-align: justify;
+    margin: 0;
+}
+
+
+.project-card h4 {
+    opacity: 0.6;
+}
 .skills-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 1em;
 }
 
 .skills-container img {
-    width: 50px;
-    height: 50px;
-    padding: 1.5em;
-    align-items: center;
+    width: 75px;
+    height: 75px;
+    padding-right: 4em;
+    padding-left: 4em;
+    align: center;
+}
+
+.skills-container .skill-item p{
+    text-align: center;
 }
 
 .timeline {
@@ -127,6 +152,8 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    justify-items: center;
+    align-items: center;
 }
 
 form label {
@@ -134,6 +161,7 @@ form label {
 }
 
 form input, form textarea {
+    font-family: 'Virgil';
     padding: 0.5em;
     width: 100%;
     max-width: 400px;
