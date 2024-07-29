@@ -21,6 +21,7 @@ header {
     padding: 1em;
     background-color: #ffffff;
 }
+
 .name {
     opacity: 1;
     align-content: center;
@@ -31,7 +32,26 @@ header {
     border-radius: 50px;
 }
 
-nav ul {
+nav {
+    position: relative;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 1em;
+}
+
+.nav-toggle .bar {
+    background-color: #272727;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    border-radius: 5px;
+}
+
+.nav-menu {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -39,7 +59,7 @@ nav ul {
     gap: 1em;
 }
 
-nav ul li a {
+.nav-menu li a {
     color: #272727;
     text-decoration: none;
     font-size: 1.2em;
@@ -91,23 +111,20 @@ section h2 {
     flex-wrap: wrap;
     gap: 1em;
     padding: 1em;
-    align-items: center; /* Center items vertically */
-    justify-content: space-evenly; /* Center items horizontally */
-    height: 100%; /* Ensure container takes full height of parent */
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
 }
 
 .project-card {
     border: 1px solid #000000;
     padding: 1em;
-    width: 20%;
-    max-width: 300px; /* Limit maximum width for responsiveness */
-    height: 100%;
-    min-height: ;
+    width: 100%;
+    max-width: 300px;
     background-color: #f8f8f8;
     border-radius: 0.75em;
-    margin: 20px; /* Adjusted margin for better spacing */
-    box-sizing: border-box ;
-
+    margin: 20px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .project-card p {
@@ -115,33 +132,47 @@ section h2 {
     margin: 0;
 }
 
-
 .project-card h4 {
     opacity: 0.6;
 }
+
+.github-link {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.github-link img {
+    width: 30px;
+    height: 30px;
+}
+
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     gap: 1em;
+    justify-content: center; /* Center items horizontally */
+}
+
+.skills-container .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
 }
 
 .skills-container img {
     width: 75px;
     height: 75px;
-    padding-right: 4em;
-    padding-left: 4em;
-    align: center;
 }
 
-.skills-container .skill-item p{
+.skills-container .skill-item p {
     text-align: center;
+    margin-top: 0.5em;
 }
 
 .timeline {
     border-left: 2px solid #000000;
     padding-left: 1em;
-    align: center;
 }
 
 .timeline-event {
@@ -152,7 +183,6 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    justify-items: center;
     align-items: center;
 }
 
@@ -173,7 +203,8 @@ form input, form textarea {
 form button {
     font-family: 'Virgil';
     background-color: white;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 35px;
     color: black;
     text-decoration: none;
@@ -191,4 +222,114 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Media Queries */
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 1em;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    #intro {
+        text-align: center;
+        padding: 3em 1em;
+    }
+
+    #intro h1 {
+        font-size: 2.5em;
+    }
+
+    #intro h3 {
+        font-size: 1.5em;
+    }
+
+    #intro p {
+        font-size: 1em;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-container img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #intro {
+        padding: 4em 2em;
+    }
+
+    #intro h1 {
+        font-size: 2.8em;
+    }
+
+    #intro h3 {
+        font-size: 1.8em;
+    }
+
+    #intro p {
+        font-size: 1.1em;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .skills-container img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    #intro {
+        padding: 5em 2em;
+    }
+
+    #intro h1 {
+        font-size: 3em;
+    }
+
+    #intro h3 {
+        font-size: 2em;
+    }
+
+    #intro p {
+        font-size: 1.2em;
+    }
 }
