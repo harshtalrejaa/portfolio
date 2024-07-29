@@ -49,7 +49,11 @@ nav ul li a {
 
 /* Responsive Navbar */
 #nav-toggle {
-    display: none;
+    display: flex;
+}
+
+#nav-menu.active {
+    display: flex;
 }
 
 #nav-menu {

@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navToggle.addEventListener('click', function() {
         navMenu.classList.toggle('active');
     });
-
+    
     // Contact form submission
     const contactForm = document.querySelector('form');
     contactForm.addEventListener('submit', function(e) {
